@@ -30,14 +30,14 @@ public class Knight extends ChessPiece {
 
 		Position p = new Position(0, 0);
 
-		// above
+	
 		p.setValues(position.getRow() - 2, position.getColumn()-1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 
 		}
 
-		// above
+	
 		p.setValues(position.getRow()  -2, position.getColumn()+1);
 
 		if (getBoard().positionExists(p) && canMove(p)) {
@@ -45,7 +45,6 @@ public class Knight extends ChessPiece {
 
 		}
 
-		// left
 		p.setValues(position.getRow() +2, position.getColumn() - 1);
 
 		if (getBoard().positionExists(p) && canMove(p)) {
@@ -53,7 +52,7 @@ public class Knight extends ChessPiece {
 
 		}
 
-		// right
+	
 
 		p.setValues(position.getRow()+2, position.getColumn() + 1);
 
@@ -62,14 +61,14 @@ public class Knight extends ChessPiece {
 
 		}
 
-		// nw
+
 		p.setValues(position.getRow() - 1, position.getColumn() - 2);
 
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 
 		}
-		// NE
+	
 		p.setValues(position.getRow() - 1, position.getColumn() + 2);
 
 		if (getBoard().positionExists(p) && canMove(p)) {
@@ -77,14 +76,14 @@ public class Knight extends ChessPiece {
 
 		}
 
-		// SW
+	
 		p.setValues(position.getRow() + 1, position.getColumn() - 2);
 
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 
 		}
-		// SE 
+		
 
 		p.setValues(position.getRow() + 1, position.getColumn() + 2);
 
